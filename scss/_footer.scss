@@ -1,0 +1,29 @@
+footer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    
+        i{
+            font-size: 30px;
+        }
+
+    .fa-youtube{
+        color: red;
+    }
+
+    .fa-google{
+        color: #50C7C7;
+    }
+
+    .fa-facebook{
+        color: #3b5998;
+    }
+
+    .fa-twitter{
+        color: #00acee;
+    }
+    
+}

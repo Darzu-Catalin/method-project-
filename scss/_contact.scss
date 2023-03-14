@@ -1,0 +1,141 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header{
+        h1{
+            color: white;
+        }
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        @include for-md{
+            flex-direction: row;
+            gap: 20px;
+        }
+        .contact-info-item{
+            text-align: center;
+            margin-bottom: 40px;
+
+            @include for-md{
+                margin-bottom: 100px;
+            }
+            h3{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+
+            span{
+                color: white;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .hire-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        h3{
+            text-align: center;
+            color: white;
+        }
+
+        p{
+            color: white;
+        }
+
+    }
+
+    .formular-items{
+        .formular-item{
+            input{
+                margin-top: 30px;
+    
+                background: rgba($color: black, $alpha: 0.4);
+                border: 0;
+                height: 30px;
+                width: 250px;
+                color: white;
+                @include for-md{
+                    width:600px;
+                    
+                }
+                @include for-sm{
+                    width:400px;
+                   
+                }
+    
+                
+            }
+            textarea{
+                background: rgba($color: black, $alpha: 0.4);
+                border: 0;
+                height: 30px;
+                margin-top: 30px;
+                color: white;
+                width: 250px;
+                @include for-md{
+                    width:600px;
+                    
+                }
+                @include for-sm{
+                    width:400px;
+                   
+                }
+
+            }
+
+            .message-input{
+                margin-bottom: 20px;
+                height: 50px;
+                @include for-sm{
+                    height: 100px;
+                }
+                @include for-md{
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    .btn{
+        background: greenyellow;
+        width: 150px;
+        opacity: 0.8;
+        border-radius: 0;
+        display: flex;
+        align-self: center;
+        
+
+        @include for-sm{
+            align-self: auto;
+        }
+
+
+        a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            
+            
+        }
+
+        &:hover{
+            background: greenyellow !important;
+        }
+    }
+
+}
